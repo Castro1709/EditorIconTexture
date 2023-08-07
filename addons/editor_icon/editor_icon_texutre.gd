@@ -3,8 +3,6 @@ extends EditorPlugin
 
 class_name EditorIconsPlugin
 
-static var icon_list : Array = []
-
 const class_script = preload("res://addons/editor_icon/editor_icon.gd")
 func _enter_tree() -> void:
 	add_custom_type("EditorIconTexture","TextureRect",class_script,get_Godot_icon("StatusSuccess"))
